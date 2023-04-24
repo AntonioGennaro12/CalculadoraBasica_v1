@@ -1,7 +1,6 @@
 /* Para ejercitarFuncionesy Procedimientos 
 intenti hacer una calculadora color #951dfc1
 */
-//const miTitulo  = document.querySelector("#mi-titulo");
 const miCalcula = document.querySelector("#mi-calcula");
 const Resultado = document.querySelector("#mi-result");
 const clearTodo = document.querySelector("#mi-clear");
@@ -44,10 +43,6 @@ Resultado.addEventListener("click", () => {
     }
 });
 
-//miTitulo.style.paddingLeft  = "16px";
-//miTitulo.style.fontSize     = "20px";
-//miTitulo.style.fontFamily   = "Verdana";
-//miTitulo.textContent        = "*** CALCULADORA BÁSICA ***";
 
 miCalcula.addEventListener("click", () => {
     var num1 = parseFloat(document.getElementById("numero1").value);
