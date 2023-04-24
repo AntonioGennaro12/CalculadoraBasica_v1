@@ -1,0 +1,45 @@
+.area1 {
+    background-color: rgba(16, 16, 222, 0.586);
+    border-left     : 10px solid #0000f0;
+    border-right    : 10px solid #0000f0;
+    border-top      : 10px solid #0000f0;
+    border-bottom   : 10px solid #0000f0;
+    border-radius   : 10%;
+    border-style    : solid;
+    }
+
+#mi-titulo {
+    padding-left: 14px;
+    font-size: 28px;
+    font-family: Verdana;
+    }
+
+#mi-lbl1 {
+    padding-left: 28px;
+    font-size: 15px;
+    font-family: Verdana;
+    }
+
+#mi-lbl2 {
+    padding-left: 28px;
+    font-size: 15px;
+    font-family: Verdana;
+    }
+
+#mi-lbl3 {
+    padding-left: 28px;
+    font-size: 15px;
+    font-family: Verdana;  
+    }
+
+    #mi-parr1 {
+        padding-left: 10px;
+        font-size: 12px;
+        font-family: Verdana;  
+        }
+
+    #mi-parr2 {
+        padding-left: 30px;
+        font-size: 10px;
+        font-family: Verdana;  
+        }

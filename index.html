@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        background-color: rgb(230, 231, 206);
+        color: whitesmoke;
+        }
+      div {
+        font-family: Arial Narrow-Bold;
+      }
+      .area1 {
+        position: absolute;
+        top: 5;
+        left: 5;
+        width: 400px;
+        height: 520px;
+        padding-left: 10px;
+        font-family: Arial Narrow-Bold;
+        }  
+
+        button {
+        box-sizing: border-box;
+        background-color: #0951dfc1; /* Color de fondo */
+        border: 5px 120px solid #e7090982; /* Quita el borde */
+        color: white; /* Color de texto */
+        padding: 20px ; /* Espacio alrededor del texto */
+        text-align: center; /* Centra el texto */
+        text-decoration: none; /* Quita la subrayado del texto */
+        display: inline-block; /* Muestra el botón como un elemento de bloque */
+        font-size: 20px; /* Tamaño de fuente */
+        border-radius: 18px; /* Radio de borde para hacer el botón redondeado */
+        width: 390px;
+      }
+    </style>
+    <link rel="stylesheet" type="text/css" href="./diseño.css">
+  </head>
+  <body>
+    <div class="area1">
+        <h2><span id="mi-titulo"> CALCULADORA BÁSICA </span></h2>
+        <label id="mi-lbl1">Operando&nbsp&nbsp N°1: </label>
+        <input type="number" style="text-align:center; font-size:20px; height:30px; width:215px ;background-color:rgb(234, 242, 241);"  id="numero1">
+        <br><br>
+        <label id="mi-lbl2">[ + , - , x * , d / , % , p , r ] </label>
+        <input type="text" style="text-align:center ;font-size: 22px; height:30px; width:30px ;background-color:rgb(240, 222, 238);" maxlength="3" id="operacion"> 
+        <br><br> 
+        <label id="mi-lbl3">Operando &nbsp&nbspN°2: </label>
+        <input type="number" style="text-align:center ;font-size: 20px; height:30px; width:215px ;background-color:rgb(234, 242, 241);" id="numero2">
+        <br><br>
+        <button id= "mi-calcula" style="background-color: rgb(136, 150, 232);"> *** CALCULAR *** </button>
+        <br><br>
+        <button id= "mi-result" style="background-color: rgb(136, 150, 232);"> Resultado* </button>
+        <p id="mi-parr1">(*) Click en "Resultado" y copia contenido a Operando N° 1</p>
+        <button id= "mi-clear" style="background-color: rgb(136, 150, 232);"> Borrar todo </button>
+        <p id="mi-parr2">Rel. 1 v1 &nbsp&nbsp - Propiedad de CFP5 - Todos los derechos reservados </p>
+        <script src= "calcula.js"></script>
+    </div>  
+  </body>
+</html>
