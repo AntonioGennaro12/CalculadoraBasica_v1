@@ -1,0 +1,41 @@
+
+
+miCalcula.addEventListener("click", () => {
+    var num1 = parseFloat(document.getElementById("numero1").value);
+    var num2 = parseFloat(document.getElementById("numero2").value);
+    var oper = document.getElementById("operacion").value;
+
+    switch(oper){
+        case    "+" : mueRes (suma  (num1, num2)); break;
+        case    "-" : mueRes (resta (num1, num2)); break;                                                                               .) {mueRes (resta (num1,num2));}
+        case    "x" : 
+        case    "*" : mueRes (multi (num1, num2)); break;
+        case    "d" :
+        case    "/" : mueRes (divid (num1, num2)); break;
+        case    "%" : mueRes (porc  (num1, num2)); break;
+        case    "p" : mueRes (pote  (num1, num2)); break;
+        case    "r" : mueRes (raiz  (num1, num2)); break;
+        default     : Resultado.textContent = "Operación no definida";
+     };
+/*
+    if      (oper == "+") {mueRes (suma  (num1,num2));}
+    else if (oper == "-") {mueRes (resta (num1,num2));}
+    else if (oper == "x") {mueRes (multi (num1,num2));}
+    else if (oper == "*") {mueRes (multi (num1,num2));}
+    else if (oper == "d") {mueRes (divid (num1,num2));}
+    else if (oper == "/") {mueRes (divid (num1,num2));}
+    else if (oper == "%") {mueRes (porc  (num1,num2));}
+    else if (oper == "p") {mueRes (pote  (num1,num2));}
+    else if (oper == "r") {mueRes (raiz  (num1,num2));}
+    else {Resultado.textContent = "Operación no definida"};
+    */
+    miCalcula.textContent = "Hacer otra cuenta";
+    miCalcula.style.background = "rgb(30, 30, 220)";
+    contador  = 0;
+    );
+
+/* Borra todos los labels  */ 
+clearTodo.addEventListener("click", () => {
+    borratodo ();
+    clearTodo.style.background = "rgb(190, 0, 0)";
+}); 

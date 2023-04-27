@@ -32,23 +32,32 @@ function borratodo ( ) {
     Resultado.textContent = "Resultado";
 }
 
-/* Carga el resultado */
-Resultado.addEventListener("click", () => {
-    if (contador  <= 1){
-    document.getElementById("numero1").value = result;
-    contador++;
-    }
-    else { 
-        borratodo();
-    }
-});
+/* MANEJO DE LOS BOTONES */
 
-
+/* Calcula */
 miCalcula.addEventListener("click", () => {
     var num1 = parseFloat(document.getElementById("numero1").value);
     var num2 = parseFloat(document.getElementById("numero2").value);
     var oper = document.getElementById("operacion").value;
 
+    switch(oper){
+        case    "+": mueRes (suma  (num1, num2)); break;
+        case    "-": mueRes (resta (num1, num2)); break;
+        case    "x": 
+        case    "X": 
+        case    "*": mueRes (multi (num1, num2)); break;
+        case    "d":
+        case    "D":
+        case    "/": mueRes (divid (num1, num2)); break;
+        case    "%": mueRes (porc  (num1, num2)); break;
+        case    "p":
+        case    "P": mueRes (pote  (num1, num2)); break;
+        case    "r": 
+        case    "R": mueRes (raiz  (num1, num2)); break;
+        default: Resultado.textContent = "Operación no definida";
+     };
+
+/*
     if      (oper == "+") {mueRes (suma  (num1,num2));}
     else if (oper == "-") {mueRes (resta (num1,num2));}
     else if (oper == "x") {mueRes (multi (num1,num2));}
@@ -59,10 +68,24 @@ miCalcula.addEventListener("click", () => {
     else if (oper == "p") {mueRes (pote  (num1,num2));}
     else if (oper == "r") {mueRes (raiz  (num1,num2));}
     else {Resultado.textContent = "Operación no definida"};
+*/
+
+
     miCalcula.textContent = "Hacer otra cuenta";
     miCalcula.style.background = "rgb(30, 30, 220)";
     contador  = 0;
     });
+
+/* Carga el resultado */
+Resultado.addEventListener("click", () => {
+    if (contador  <= 1){
+    document.getElementById("numero1").value = result;
+    contador++;
+    }
+    else { 
+        borratodo();
+    }
+});
 
 /* Borra todos los labels  */ 
 clearTodo.addEventListener("click", () => {
