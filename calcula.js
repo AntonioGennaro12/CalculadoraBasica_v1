@@ -19,6 +19,9 @@ function raiz   (bas, exp){return Math.pow (bas, (1/exp));}
 
 /* procedimiento*/
 function mueRes (resul) {
+    resul = resul.toFixed(10);
+    let resto = resul % 1;
+    if (resto === 0) { resul = parseFloat(resul);}
     Resultado.textContent = "Resultado = "+resul+"";
     Resultado.style.background = "rgb(0, 128, 20)";
     result = resul;
@@ -56,19 +59,6 @@ miCalcula.addEventListener("click", () => {
         case    "R": mueRes (raiz  (num1, num2)); break;
         default: Resultado.textContent = "Operación no definida";
      };
-
-/*
-    if      (oper == "+") {mueRes (suma  (num1,num2));}
-    else if (oper == "-") {mueRes (resta (num1,num2));}
-    else if (oper == "x") {mueRes (multi (num1,num2));}
-    else if (oper == "*") {mueRes (multi (num1,num2));}
-    else if (oper == "d") {mueRes (divid (num1,num2));}
-    else if (oper == "/") {mueRes (divid (num1,num2));}
-    else if (oper == "%") {mueRes (porc  (num1,num2));}
-    else if (oper == "p") {mueRes (pote  (num1,num2));}
-    else if (oper == "r") {mueRes (raiz  (num1,num2));}
-    else {Resultado.textContent = "Operación no definida"};
-*/
 
 
     miCalcula.textContent = "Hacer otra cuenta";
