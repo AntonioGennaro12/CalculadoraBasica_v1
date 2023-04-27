@@ -80,5 +80,5 @@ Resultado.addEventListener("click", () => {
 /* Borra todos los labels  */ 
 clearTodo.addEventListener("click", () => {
     borratodo ();
-    clearTodo.style.background = "rgb(190, 0, 0)";
+    clearTodo.style.background = "rgb(180, 0, 0)";
 }); 
