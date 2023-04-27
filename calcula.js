@@ -60,7 +60,6 @@ miCalcula.addEventListener("click", () => {
         default: Resultado.textContent = "Operación no definida";
      };
 
-
     miCalcula.textContent = "Hacer otra cuenta";
     miCalcula.style.background = "rgb(30, 30, 220)";
     contador  = 0;
