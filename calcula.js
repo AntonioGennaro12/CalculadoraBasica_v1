@@ -35,7 +35,7 @@ function borratodo ( ) {
     document.getElementById("operacion").value = "";
     Resultado.textContent = "Resultado";
 }
-/*  <link rel="icon" href="mi_calcu.png" type="image/png"> */
+
 /* MANEJO DE LOS BOTONES */
 
 /* Calcula */
