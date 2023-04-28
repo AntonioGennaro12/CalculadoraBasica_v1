@@ -13,16 +13,16 @@
     font-size:    28px;
     font-family:  Verdana;
     }
-
+ 
 #mi-lbl1 {
     padding-left: 28px;
     font-size:    15px;
     font-family:  Verdana;
     }
-
+    
 #mi-lbl2 {
     padding-left: 28px;
-    font-size: 15px;
+    font-size:    15px;
     font-family: Verdana;
     }
 
@@ -32,13 +32,13 @@
     font-family:  Verdana;  
     }
 
-    #mi-parr1 {
-        padding-left: 10px;
-        font-size:    12px;
-        font-family:  Verdana;  
-        }
+#mi-parr1 {
+    padding-left: 10px;
+    font-size:    12px;
+    font-family:  Verdana;  
+    }
 
-    #mi-parr2 {
+#mi-parr2 {
         padding-left: 30px;
         font-size:    10px;
         font-family:  Verdana;  
