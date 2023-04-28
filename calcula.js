@@ -19,10 +19,11 @@ function raiz   (bas, exp){return Math.pow (bas, (1/exp));}
 
 /* procedimiento*/
 function mueRes (resul) {
-    resul = resul.toFixed(10);
+    resul = resul.toFixed(16);
     let resto = resul % 1;
-    if (resto === 0) { resul = parseFloat(resul);}
-    Resultado.textContent = "Resultado = "+resul+"";
+    if (resto === 0) { resul = parseFloat(resul);};
+    if (resul=="NaN"){ Resultado.textContent = "Resultado = 0"; }
+    else { Resultado.textContent = "Resultado = "+resul+""; }
     Resultado.style.background = "rgb(0, 128, 20)";
     result = resul;
 }
