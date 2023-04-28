@@ -19,7 +19,7 @@ function raiz   (bas, exp){return Math.pow (bas, (1/exp));}
 
 /* procedimiento*/
 function mueRes (resul) {
-    resul = resul.toFixed(16);
+    resul = resul.toFixed(14);
     let resto = resul % 1;
     if (resto === 0) { resul = parseFloat(resul);};
     if (resul=="NaN"){ Resultado.textContent = "Resultado = 0"; }
